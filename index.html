@@ -67,25 +67,24 @@
   </head>
   <body>
     <!-- This is for navbar -->
-
-
     <nav
       class="fixed top-0 w-full z-[100] glass px-6 py-4 flex justify-between items-center"
     >
-      <div class="text-xl md:text-2xl font-bold tracking-tighter">
+      <div class="text-xl flex-1 md:text-2xl font-bold tracking-tighter">
         CODE<span class="text-blue-400">ZO</span>
       </div>
 
       <div
-        class="hidden md:flex space-x-6 text-[14px] font-bold tracking-widest"
+        class="hidden flex-2 md:flex space-x-8 text-[14px] font-bold tracking-widest"
       >
         <a href="#home" class="hover:text-blue-400 transition">HOME</a>
         <a href="#offer" class="hover:text-blue-400 transition">OFFER</a>
-        <a href="#plans" class="hover:text-blue-400 transition">PLANS</a>
-        <a href="#contact" class="hover:text-blue-400 transition">CONTACT</a>
+        <a href="#work" class="hover:text-blue-400 transition">WORK</a>
+                <a href="#plans" class="hover:text-blue-400 transition">PLANS</a>
+
       </div>
 
-      <div class="flex items-center">
+      <div class="flex items-center flex-1 justify-end">
         <button
           class="hidden md:inline-block px-5 py-2 bg-blue-600 font-bold hover:bg-white/10 rounded-full transition-all"
         >Talk to us</button>
@@ -121,12 +120,24 @@
         onclick="toggleMenu()"
         >OFFER</a
       >
+
+ <a
+        href="#work"
+        class="text-xl font-bold hover:text-blue-400"
+        onclick="toggleMenu()"
+        >WORK</a
+      >
+
       <a
         href="#plans"
         class="text-xl font-bold hover:text-blue-400"
         onclick="toggleMenu()"
         >PLANS</a
       >
+      
+
+
+      
       <a
         href="#contact"
         class="bg-blue-600 px-10 py-4 rounded-full font-bold shadow-xl"
