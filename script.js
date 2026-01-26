@@ -36,26 +36,13 @@ document.querySelectorAll(".toggle-details").forEach((button) => {
   });
 });
 
-// Secure Form Logic
-const form = document.getElementById("secure-form");
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
+const contactform = document.getElementById("secure-form");
 
-  // Basic Security: Sanitize
-  const inputs = form.querySelectorAll("input, textarea");
-  let isBot = false;
 
-  inputs.forEach((input) => {
-    if (input.value.includes("<script")) isBot = true;
-  });
 
-  if (!isBot) {
-    const btn = form.querySelector("button");
-    btn.innerText = "Processing...";
-    setTimeout(() => {
-      alert("Security Check Passed. Message Sent!");
-      form.reset();
-      btn.innerText = "Send Message";
-    }, 1500);
-  }
+contactform.addEventListener("submit", (form) => {
+  // form.preventDefault();
+  setTimeout(() => {
+    form.target.reset();
+  }, 1500);
 });

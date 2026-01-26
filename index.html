@@ -16,7 +16,7 @@
         --dark-blue: #020617;
         --shiny-blue: #061d4d;
       }
-      *{
+      * {
         box-sizing: border-box;
       }
       body {
@@ -68,12 +68,12 @@
       }
     </style>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <!-- This is for navbar -->
     <nav
       class="fixed top-0 w-full z-[100] glass px-6 py-4 flex justify-between items-center"
     >
-      <div class="text-xl flex-1 md:text-2xl font-bold tracking-tighter">
+      <div class="text-xl flex-1 md:text-2xl font-bold tracking-wide">
         CODE<span class="text-blue-400">ZO</span>
       </div>
 
@@ -87,11 +87,13 @@
       </div>
 
       <div class="flex items-center flex-1 justify-end">
-        <button
-          class="hidden md:inline-block px-5 py-2 bg-blue-600 font-bold hover:bg-white/10 rounded-full transition-all"
-        >
-          Talk to us
-        </button>
+        <a href="#contact">
+          <button
+            class="hidden md:inline-block px-5 py-2 bg-blue-600 font-bold hover:bg-blue-700 rounded-full transition-all"
+          >
+            Talk to us
+          </button>
+        </a>
 
         <i
           id="menu-btn"
@@ -114,34 +116,34 @@
       </button>
       <a
         href="#home"
-        class="text-xl font-bold hover:text-blue-400"
+        class="text-xl font-bold hover:text-blue-400 tracking-widest"
         onclick="toggleMenu()"
         >HOME</a
       >
       <a
         href="#offer"
-        class="text-xl font-bold hover:text-blue-400"
+        class="text-xl font-bold hover:text-blue-400 tracking-widest"
         onclick="toggleMenu()"
         >OFFER</a
       >
 
       <a
         href="#work"
-        class="text-xl font-bold hover:text-blue-400"
+        class="text-xl font-bold hover:text-blue-400 tracking-widest"
         onclick="toggleMenu()"
         >WORK</a
       >
 
       <a
         href="#plans"
-        class="text-xl font-bold hover:text-blue-400"
+        class="text-xl font-bold hover:text-blue-400 tracking-widest"
         onclick="toggleMenu()"
         >PLANS</a
       >
 
       <a
         href="#contact"
-        class="bg-blue-600 px-10 py-4 rounded-full font-bold shadow-xl"
+        class="bg-blue-600 px-10 py-4 rounded-full font-bold shadow-xl tracking-widest"
         onclick="toggleMenu()"
         >TALK WITH US</a
       >
@@ -150,7 +152,7 @@
     <!-- This is for hero section -->
     <section
       id="home"
-      class="relative min-h-[110vh] flex flex-col items-center justify-center text-center px-6"
+      class="relative min-h-[90vh] md:min-h-[110vh] w-full flex flex-col items-center justify-center text-center px-6"
     >
       <div
         class="absolute top-1/4 w-64 h-64 bg-blue-500/20 blur-[100px] rounded-full -z-10"
@@ -167,8 +169,8 @@
         class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-shiny leading-tight mb-6 max-w-4xl"
         data-aos="zoom-out"
       >
-        Rank Higher. <br class="hidden md:block" />
-        Convert Better.
+        Rank Higher <br class="hidden md:block" />
+        Convert Better
       </h1>
 
       <p
@@ -201,7 +203,9 @@
     <!-- This is for offer section -->
     <section id="offer" class="py-24 px-6 max-w-7xl mx-auto">
       <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Precision Services</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 italic">
+          Precision Services
+        </h2>
         <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
       </div>
 
@@ -247,11 +251,31 @@
       </div>
     </section>
 
+    <!-- This is the code for work section -->
+    <section id="work" class="py-24 px-6 max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 italic">Our Work</h2>
+        <div class="mx-auto h-1 w-20 bg-blue-600 rounded-full">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white/20">
+          <a href=""><img src="" alt=""></a>
+        </div>
+                <div class="bg-white/20">dfd</div>
+        <div class="bg-white/20">dfd</div>
+
+      </div>
+    </section>
+
     <!-- This is the code for plans section -->
     <section id="plans" class="py-24 px-6 max-w-5xl mx-auto">
-      <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 italic">
-        Growth Packages
-      </h2>
+      <div class="mb-16 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-4 italic">
+          Growth Packages
+        </h2>
+        <div class="rounded-full h-1 w-20 bg-blue-600 mx-auto"></div>
+      </div>
       <div class="grid md:grid-cols-2 gap-8">
         <div
           class="glass p-8 rounded-3xl border-t-4 border-green-500/50 shadow-2xl"
@@ -342,6 +366,7 @@
       </div>
     </section>
 
+    <!-- This is the code for contact section -->
     <section
       id="contact"
       class="py-24 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-12"
@@ -354,32 +379,49 @@
         </p>
       </div>
       <div class="glass p-8 rounded-3xl shadow-inner">
-        <form id="secure-form" class="space-y-4">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          id="secure-form"
+          class="space-y-4"
+          name="agency-form"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="ceaa4f70-2e71-435e-9437-979d6ab6cc60"
+          />
+
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
               type="text"
               placeholder="First Name"
+              name="first-name"
               required
               class="bg-white/5 border border-white/10 p-4 rounded-xl focus:border-blue-500 outline-none"
             />
             <input
               type="text"
               placeholder="Last Name"
+              name="last-name"
               class="bg-white/5 border border-white/10 p-4 rounded-xl focus:border-blue-500 outline-none"
             />
           </div>
           <input
             type="email"
             placeholder="Your Email"
+            name="email"
             required
             class="w-full bg-white/5 border border-white/10 p-4 rounded-xl focus:border-blue-500 outline-none"
           />
           <textarea
             placeholder="How can we help?"
             class="w-full bg-white/5 border border-white/10 p-4 rounded-xl h-32 outline-none focus:border-blue-500"
+            name="Message"
           ></textarea>
           <button
             class="w-full bg-white text-black py-4 rounded-xl font-extrabold hover:bg-blue-500 hover:text-white transition-all"
+            type="submit"
           >
             Send Message
           </button>
