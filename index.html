@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en"  class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,12 +25,15 @@
 
       * {
         box-sizing: border-box;
+        outline: 1px solid red;
       }
       body {
         font-family: "Inter", sans-serif;
         background: linear-gradient(145deg, #020617 0%, #061d4d 100%);
         color: #f8fafc;
         min-height: 100vh;
+        max-width: 100%;
+        overflow-x: hidden;
       }
       /* Glassmorphism */
       .glass {
@@ -45,9 +48,11 @@
         transition: clip-path 0.6s cubic-bezier(0.85, 0, 0.15, 1);
         background: #020617; /* Solid background for readability */
         z-index: 200;
+        overflow-x: hidden;
       }
       #mobile-menu.open {
         clip-path: inset(0 0 0 0);
+        /* transform: translateY(0); */
       }
 
       /* Plan Accordion */
@@ -286,7 +291,7 @@
         >
           <a href="https://client1-8e7.pages.dev/"
             ><img
-              class="hover:scale-110 hover:opacity-60 transition-all .3s h-full object-fit"
+              class="hover:scale-110 hover:opacity-60 transition-all .3s h-full w-full object-fit"
               src="./images/gym.webp"
               alt="gym website"
           /></a>
@@ -298,7 +303,7 @@
         >
           <a href="https://hospitalwebhit.pages.dev/"
             ><img
-              class="hover:scale-110 hover:opacity-60 transition-all .3s h-full object-fit"
+              class="hover:scale-110 hover:opacity-60 transition-all .3s h-full w-full object-fit"
               src="./images/hospital.webp"
               alt="hospital website"
           /></a>
@@ -310,7 +315,7 @@
         >
           <a class="" href="https://cafewebhit.pages.dev/"
             ><img
-              class="hover:scale-110 hover:opacity-60 transition-all .3s h-full"
+              class="hover:scale-110 hover:opacity-60 transition-all .3s h-full w-full object-fit"
               src="./images/cafe.webp"
               alt="cafe website"
           /></a>
