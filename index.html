@@ -15,7 +15,14 @@
       :root {
         --dark-blue: #020617;
         --shiny-blue: #061d4d;
+        /* --fs-xs: clamp(0.7rem, 0.6rem + 0.4vw, 0.85rem);
+        --fs-sm: clamp(0.85rem, 0.8rem + 0.5vw, 1rem);
+        --fs-base: clamp(1rem, 0.9rem + 0.6vw, 1.125rem);
+        --fs-lg: clamp(1.2rem, 1.1rem + 1vw, 1.5rem);
+        --fs-xl: clamp(1.6rem, 1.4rem + 2vw, 2.4rem);
+        --fs-hero: clamp(2.5rem, 6vw, 4.5rem); */
       }
+
       * {
         box-sizing: border-box;
       }
@@ -93,7 +100,11 @@
       </div>
 
       <div class="">
-        <a target="_blank" rel="noopener noreferrer" href="https://wa.me/917814697139?">
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://wa.me/917814697139?"
+        >
           <button
             class="hidden md:inline-block px-5 py-2 bg-blue-600 font-bold hover:bg-blue-700 rounded-full transition-all"
           >
@@ -101,11 +112,12 @@
           </button>
         </a>
 
-        <i
+        <button
           id="menu-btn"
-          data-lucide="menu"
-          class="inline-block md:hidden w-6 h-6"
-        ></i>
+          class="md:hidden flex justify-between items-center w-10 h-10"
+        >
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
       </div>
     </nav>
 
