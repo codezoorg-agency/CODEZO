@@ -1,6 +1,6 @@
 // Init Icons and Animations
 lucide.createIcons();
-AOS.init({ duration: 1000, once: true });
+AOS.init({ duration: 1000, once: true, startEvent: "DOMContentLoaded" });
 
 // Shutter Menu Navigation
 const menuBtn = document.getElementById("menu-btn");
@@ -37,8 +37,6 @@ document.querySelectorAll(".toggle-details").forEach((button) => {
 });
 
 const contactform = document.getElementById("secure-form");
-
-
 
 contactform.addEventListener("submit", (form) => {
   // form.preventDefault();
