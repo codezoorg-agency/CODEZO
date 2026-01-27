@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"  class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,6 @@
 
       * {
         box-sizing: border-box;
-        outline: 1px solid red;
       }
       body {
         font-family: "Inter", sans-serif;
@@ -34,6 +33,7 @@
         min-height: 100vh;
         max-width: 100%;
         overflow-x: hidden;
+        /* position: relative; */
       }
       /* Glassmorphism */
       .glass {
@@ -80,16 +80,18 @@
       }
     </style>
   </head>
-  <body class="overflow-x-hidden">
+  <body>
     <!-- This is for navbar -->
-    <nav
-      class="fixed top-0 w-full z-[100] glass px-6 py-4 flex justify-between items-center"
+    <!-- <nav
+      class="fixed top-0 left-0 w-full z-[100] glass px-6 py-4 flex justify-between items-center"
     >
-      <div class="text-2xl md:text-2xl font-bold tracking-wide">
+      <div class="text-2xl md:text-3xl font-bold tracking-wide">
         CODE<span class="text-blue-400">ZO</span>
       </div>
 
-      <div class="hidden md:flex gap-8 text-[16px] font-bold">
+      <div
+        class="hidden md:flex justify-center items-center gap-8 text-[16px] font-bold"
+      >
         <a href="#home" class="hover:text-blue-400 transition tracking-widest"
           >HOME</a
         >
@@ -104,7 +106,7 @@
         >
       </div>
 
-      <div class="">
+      <div class="flex">
         <a
           target="_blank"
           rel="noopener noreferrer"
@@ -117,14 +119,11 @@
           </button>
         </a>
 
-        <button
-          id="menu-btn"
-          class="md:hidden flex justify-between items-center w-10 h-10"
-        >
+        <button id="menu-btn" class="md:hidden flex items-center w-10 h-10">
           <i data-lucide="menu" class="w-6 h-6"></i>
         </button>
       </div>
-    </nav>
+    </nav> -->
 
     <!-- This is for mobile menu  -->
     <div
