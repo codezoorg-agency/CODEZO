@@ -7,7 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- <meta name="google-site-verification" content="uc06tdy-FHuuRBzRMPoxiKVPKt5ELBEEvcLHiC285tk" /> -->
-     <meta name="google-site-verification" content="uc06tdy-FHuuRBzRMPoxiKVPKt5ELBEEvcLHiC285tk" />
+    <meta
+      name="google-site-verification"
+      content="uc06tdy-FHuuRBzRMPoxiKVPKt5ELBEEvcLHiC285tk"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -86,19 +89,20 @@
     </style>
     <!-- Google tag (gtag.js) -->
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-58BBRF57ND"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-58BBRF57ND"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-58BBRF57ND');
-</script>
-
-
+      gtag("config", "G-58BBRF57ND");
+    </script>
   </head>
   <body class="overflow-x-hidden">
     <!-- This is for navbar -->
@@ -187,7 +191,9 @@
       >
 
       <a
-        href="#contact"
+        id="whatsapp-btn"
+        rel="noopener noreferrer"
+        target="_blank"
         class="bg-blue-600 px-10 py-4 rounded-full font-bold shadow-xl tracking-widest"
         onclick="toggleMenu()"
         >TALK WITH US</a
@@ -245,17 +251,22 @@
       </div>
     </section>
 
-    <!-- This is for offer section -->
-    <!-- <section id="offer" class="py-24 px-6 max-w-7xl mx-auto ">
-      <div class="text-center mb-16">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 italic">
-          Precision Services
-        </h2>
-        <div class="h-1 w-20 bg-blue-600 mx-auto rounded-full"></div>
+    <!-- This is the code for offer section -->
+    <section id="offer" class="py-24 px-6 max-w-7xl mx-auto">
+      <!-- Section Header -->
+      <div class="text-center mb-20">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Precision Services</h2>
+
+        <p
+          class="text-gray-400 max-w-xl mx-auto text-base md:text-lg leading-relaxed"
+        >
+          Everything you need to get customers online — without tech headaches.
+        </p>
+
+        <div class="h-1 w-16 bg-blue-600 mx-auto rounded-full mt-6"></div>
       </div>
 
-<h3 class="text-xl text-center mb-5">Everything you need to get customers online — without tech headaches.</h3>
-
+      <!-- Services Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <div
           class="glass p-8 rounded-3xl hover:border-blue-500/50 transition-all"
@@ -264,10 +275,11 @@
           <i data-lucide="monitor" class="text-blue-500 mb-6 w-10 h-10"></i>
           <h3 class="text-xl font-bold mb-3">Pro Websites</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Modern, responsive designs that look stunning on any screen, from
-            mobile to desktop.
+            Modern, responsive websites built for speed, clarity, and
+            conversions across all devices.
           </p>
         </div>
+
         <div
           class="glass p-8 rounded-3xl hover:border-blue-500/50 transition-all"
           data-aos="fade-up"
@@ -276,10 +288,11 @@
           <i data-lucide="trending-up" class="text-blue-500 mb-6 w-10 h-10"></i>
           <h3 class="text-xl font-bold mb-3">SEO Services</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Data-driven keyword research and on-page optimization to put you on
-            Google's first page.
+            Data-driven SEO strategies that improve visibility, rankings, and
+            long-term organic traffic.
           </p>
         </div>
+
         <div
           class="glass p-8 rounded-3xl hover:border-blue-500/50 transition-all sm:col-span-2 lg:col-span-1"
           data-aos="fade-up"
@@ -291,70 +304,12 @@
           ></i>
           <h3 class="text-xl font-bold mb-3">Security & Maintenance</h3>
           <p class="text-gray-400 text-sm leading-relaxed">
-            Continuous protection, SSL management, and daily backups to keep
-            your business safe.
+            Ongoing protection, updates, and monitoring to keep your website
+            fast, secure, and reliable.
           </p>
         </div>
       </div>
-    </section> -->
-
-
-
-    <section id="offer" class="py-24 px-6 max-w-7xl mx-auto">
-  <!-- Section Header -->
-  <div class="text-center mb-20">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">
-      Precision Services
-    </h2>
-
-    <p class="text-gray-400 max-w-xl mx-auto text-base md:text-lg leading-relaxed">
-      Everything you need to get customers online — without tech headaches.
-    </p>
-
-    <div class="h-1 w-16 bg-blue-600 mx-auto rounded-full mt-6"></div>
-  </div>
-
-  <!-- Services Grid -->
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div
-      class="glass p-8 rounded-3xl hover:border-blue-500/50 transition-all"
-      data-aos="fade-up"
-    >
-      <i data-lucide="monitor" class="text-blue-500 mb-6 w-10 h-10"></i>
-      <h3 class="text-xl font-bold mb-3">Pro Websites</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">
-        Modern, responsive websites built for speed, clarity, and conversions
-        across all devices.
-      </p>
-    </div>
-
-    <div
-      class="glass p-8 rounded-3xl hover:border-blue-500/50 transition-all"
-      data-aos="fade-up"
-      data-aos-delay="100"
-    >
-      <i data-lucide="trending-up" class="text-blue-500 mb-6 w-10 h-10"></i>
-      <h3 class="text-xl font-bold mb-3">SEO Services</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">
-        Data-driven SEO strategies that improve visibility, rankings, and
-        long-term organic traffic.
-      </p>
-    </div>
-
-    <div
-      class="glass p-8 rounded-3xl hover:border-blue-500/50 transition-all sm:col-span-2 lg:col-span-1"
-      data-aos="fade-up"
-      data-aos-delay="200"
-    >
-      <i data-lucide="shield-check" class="text-blue-500 mb-6 w-10 h-10"></i>
-      <h3 class="text-xl font-bold mb-3">Security & Maintenance</h3>
-      <p class="text-gray-400 text-sm leading-relaxed">
-        Ongoing protection, updates, and monitoring to keep your website fast,
-        secure, and reliable.
-      </p>
-    </div>
-  </div>
-</section>
+    </section>
     <!-- This is the code for work section -->
     <section
       id="work"

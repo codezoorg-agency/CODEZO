@@ -44,3 +44,13 @@ contactform.addEventListener("submit", (form) => {
     form.target.reset();
   }, 1500);
 });
+
+// Whatapp button logic code
+const whatsappbtn = document.getElementById("whatsapp-btn");
+
+whatsappbtn.addEventListener("click", () => {
+  const message = "Hi, I want a website. Can you help?";
+  whatsappbtn.href = "https://wa.me/917814697139?text=" + encodeURIComponent(message);
+
+  // toggleMenu()
+});
