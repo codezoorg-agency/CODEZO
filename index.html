@@ -19,7 +19,7 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/lucide@latest"></script>
-     <script type="application/ld+json">
+    <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
@@ -103,38 +103,21 @@
       }
     </style>
 
-
-
-
     <!-- LINK FOR FAVICON -->
     <link rel="icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 
+    <!-- NEW CODE ADDED FOR GOOGLE TAG MANAGER -->
 
-
-<!-- NEW CODE ADDED FOR GOOGLE TAG MANAGER -->
-
-<!-- Google Tag Manager -->
-<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    <!-- Google Tag Manager -->
+    <!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TMGN9G95');</script> -->
-<!-- End Google Tag Manager -->
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- End Google Tag Manager -->
 
     <!-- Google tag (gtag.js) -->
     <!-- <script
@@ -151,10 +134,9 @@ f
       gtag("config", "G-58BBRF57ND");
     </script> -->
 
-
-<!-- ==== CODE FOR META ADS PIXEL ==== -->
-<!-- Meta Pixel Code -->
-<!-- <script>
+    <!-- ==== CODE FOR META ADS PIXEL ==== -->
+    <!-- Meta Pixel Code -->
+    <!-- <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -169,41 +151,49 @@ fbq('track', 'PageView');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1260630989409410&ev=PageView&noscript=1"
 /></noscript> -->
-<!-- End Meta Pixel Code -->
+    <!-- End Meta Pixel Code -->
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YE48P0GRS1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YE48P0GRS1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YE48P0GRS1');
-</script>
-
-
-
+      gtag("config", "G-YE48P0GRS1");
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-M45VP9WX");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
-  
+
   <body class="overflow-x-hidden">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-M45VP9WX"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!-- This is for navbar -->
     <nav
@@ -593,10 +583,11 @@ src="https://www.facebook.com/tr?id=1260630989409410&ev=PageView&noscript=1"
           class="space-y-4"
           name="agency-form"
         >
-        <input
-    type="hidden"
-    name="redirect"
-    value="https://codezo.in/thankyou.html">
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://codezo.in/thankyou.html"
+          />
           <input
             type="hidden"
             name="access_key"
